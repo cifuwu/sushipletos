@@ -12,6 +12,6 @@ pnpm dev
 
 Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
-El index se encuentra en la ruta `app/page.js`. De ahí, pueden modificar el page, o los componentes de react que se encuentran organizados en `components`.
+El index se encuentra en la ruta `app/page.js`. De ahí, pueden modificar el page, o los componentes de react que se encuentran organizados en `components/`.
 
 
