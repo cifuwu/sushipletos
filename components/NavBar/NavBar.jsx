@@ -25,11 +25,11 @@ function NavBar() {
       </div>
       <div className='d-none d-md-block'>
         <div className='row justify-content-center' style={{marginTop: 5}}>
-          <BotonNav texto='Inicio'/>
-          <BotonNav texto='Catalogo'/>
-          <BotonNav texto='Biblioteca'/>
-          <BotonNav texto='Información'/>
-          <BotonNav texto='Sobre Nosotros'/>
+          <BotonNav texto='Inicio' url='/'/>
+          <BotonNav texto='Catalogo' url='Catalogo'/>
+          <BotonNav texto='Biblioteca' url='Biblioteca'/>
+          <BotonNav texto='Información' url='Informacion'/>
+          <BotonNav texto='Sobre Nosotros' url='SobreNosotros'/>
         </div>
       </div>
 
