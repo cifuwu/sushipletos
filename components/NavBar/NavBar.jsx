@@ -7,7 +7,6 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Container from "react-bootstrap/Container";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import Cookies from 'js-cookie';
 
 import { categorias } from "@/helpers/data";
 
@@ -18,7 +17,6 @@ import logo from "../../public/logo_2.png";
 
 import { CartContext } from "../../contexts/cart/CartContext";
 import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
-import FilaCategorias from "../home/FilaCategorias";
 import { Button } from "react-bootstrap";
 
 import { MdShoppingCart } from "react-icons/md";
