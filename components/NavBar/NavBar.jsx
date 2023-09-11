@@ -70,6 +70,7 @@ function Navbar() {
           </Col>
         </Row>
       </Container>
+      
       <Container style={{ marginTop: "5px" }} fluid="lg">
 
         {/* NAVBAR */}
@@ -234,11 +235,11 @@ function Navbar() {
 
       {/* ------ CARRITO OFFCANVAS ------ */}
 
-      <CarritoOffCanvas
+      {/* <CarritoOffCanvas
         abrir={carritoAbrir}
         cerrar={carritoCerrar}
         estado={mostrarCarrito}
-      />
+      /> */}
 
       
     </div>
