@@ -13,7 +13,7 @@ function SobreNosotrosPage() {
   return (
     <>
     <Head>
-      <title>Sobre Nosotros | CifuMakers</title>
+      <title>Sobre Nosotros </title>
       <meta name="description" content='¿quiénes somos nosotros? ¡averigualo acá!' />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datoEstructurado) }} />

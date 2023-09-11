@@ -11,8 +11,6 @@ import webpay from "@/assets/2.png";
 import { UserContext } from "@/contexts/user/UserContext";
 
 import Image from "next/image";
-import { PagoUrl, PedidoUrl } from "@/helpers/URL";
-import Cookies from "js-cookie";
 
 
 

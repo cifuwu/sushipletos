@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>CifuMakers</title>
+        <title>Suhsipletos</title>
         <meta name="description" content="Tiendita de productos hechos en impresora 3D" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

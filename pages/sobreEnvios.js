@@ -7,7 +7,7 @@ function SobreEnviosPage() {
   return (
     <>
     <Head>
-      <title>Sobre Envíos | CifuMakers</title>
+      <title>Sobre Envíos</title>
       <meta name="description" content='¿dudas sobre nuestras políticas de envíos? ¡averigualo acá!' />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>

@@ -7,8 +7,6 @@ import { UserContext } from "../../contexts/user/UserContext";
 import { useRut } from "@/hooks/react-rut-formatter/dist";
 import { TextField } from "@mui/material";
 import { useRouter } from "next/router";
-import { PedidoUrl } from "@/helpers/URL";
-import Cookies from 'js-cookie';
 import { Spinner } from "react-bootstrap";
 
 

@@ -5,7 +5,6 @@ import Productcard from '../Productcard';
 import { useState, useEffect } from 'react';
 
 import Spinner from 'react-bootstrap/Spinner';
-import { getPorductosHomeUrl } from '@/helpers/URL';
 
 
 

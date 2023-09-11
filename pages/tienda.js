@@ -51,7 +51,7 @@ function TiendaPage() {
     return (
         <>
             <Head>
-                <title>Tienda | CifuMakers</title>
+                <title>Tienda</title>
                 <meta name="description" content="Todos los Productos de CifuMakers" />
                 <meta
                     name="viewport"

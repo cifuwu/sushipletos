@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { getCarruselUrl } from "@/helpers/URL";
 import useResolucion from '@/hooks/useResolucion';
 
 import Image from "next/image";

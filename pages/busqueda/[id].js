@@ -12,7 +12,7 @@ function Busqueda({productos, busqueda}) {
   return (
     <>
     <Head>
-        <title>Búsqueda | CifuMakers</title>
+        <title>Búsqueda</title>
         <meta name="description" content="Busqueda - CifuMakers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>

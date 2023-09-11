@@ -7,7 +7,7 @@ function PoliticasDevolucion() {
   return (
     <>
     <Head>
-      <title>Políticas de Reembolsos | CifuMakers</title>
+      <title>Políticas de Reembolsos</title>
       <meta name="description" content='¿quiénes saber nuestras políticas sobre reembolsos? ¡averigualo acá!' />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>

@@ -1,4 +1,3 @@
-import { getImagenesHomeUrl } from "@/helpers/URL";
 import React, { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
 

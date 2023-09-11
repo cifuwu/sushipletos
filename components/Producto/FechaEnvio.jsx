@@ -1,18 +1,6 @@
-import { ProductosUrl } from '@/helpers/URL';
 import React, { useEffect, useState } from 'react'
 import { Card, Col, Row } from 'react-bootstrap';
 
-const getTiempo = async (id) => {
-    return await fetch(ProductosUrl+id+'?tiempo_estimado=true',{
-      headers: {
-        'Content-Type' : 'application/json',
-       },
-       method: 'get'
-      })
-      .then(result => result.json())
-      .catch(err => console.log(err))
-  }
-  
 
 const fecha = (fecha) => {
     const dias = [
@@ -52,7 +40,7 @@ function FechaEnvio({idProducto}) {
   const[fecha_envio, setFecha_envio] = useState();
 
   const obtenerTiempo = async()=>{
-    const resp = await getTiempo(idProducto);
+    const resp = {}
     setFecha_envio(resp.fecha_envio);
   } 
 
