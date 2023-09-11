@@ -233,12 +233,12 @@ function Navbar() {
 
 
       {/* ------ CARRITO OFFCANVAS ------ */}
-
+{/* 
       <CarritoOffCanvas
         abrir={carritoAbrir}
         cerrar={carritoCerrar}
         estado={mostrarCarrito}
-      />
+      /> */}
 
       
     </div>
