@@ -1,49 +1,49 @@
 import React, { useContext } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { useState } from "react";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
+// import { useState } from "react";
+// import { useEffect } from "react";
+// import { useRouter } from "next/router";
+// import Link from "next/link";
 import Container from "react-bootstrap/Container";
-import Offcanvas from "react-bootstrap/Offcanvas";
+// import Offcanvas from "react-bootstrap/Offcanvas";
 
-import { categorias } from "@/helpers/data";
-
-
-import Image from "next/image";
-import logo from "../../public/logo_2.png";
+// import { categorias } from "@/helpers/data";
 
 
-import { CartContext } from "../../contexts/cart/CartContext";
-import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
-import { Button } from "react-bootstrap";
+// import Image from "next/image";
+// import logo from "../../public/logo_2.png";
 
-import { MdShoppingCart } from "react-icons/md";
-import { GoThreeBars } from "react-icons/go";
 
-import Boton from "./components/Boton";
-import DropdownNav from "./components/DropdownNav";
+// import { CartContext } from "../../contexts/cart/CartContext";
+// import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
+// import { Button } from "react-bootstrap";
+
+// import { MdShoppingCart } from "react-icons/md";
+// import { GoThreeBars } from "react-icons/go";
+
+// import Boton from "./components/Boton";
+// import DropdownNav from "./components/DropdownNav";
 
 
 
 
 function Navbar() {
-  const [cart, setCart] = useContext(CartContext);
+  // const [cart, setCart] = useContext(CartContext);
 
-  const [mostrarCanvas, setCanvas] = useState(false);
-  const [mostrarCarrito, setCarrito] = useState(false);
+  // const [mostrarCanvas, setCanvas] = useState(false);
+  // const [mostrarCarrito, setCarrito] = useState(false);
 
-  const canvasClose = () => setCanvas(false);
-  const canvasShow = () => setCanvas(true);
+  // const canvasClose = () => setCanvas(false);
+  // const canvasShow = () => setCanvas(true);
 
-  const carritoCerrar = () => setCarrito(false);
-  const carritoAbrir = () => setCarrito(true);
+  // const carritoCerrar = () => setCarrito(false);
+  // const carritoAbrir = () => setCarrito(true);
 
-  const [cantidad, setCantidad] = useState(0);
-  const [totalCarrito, setTotalCarrito] = useState(0);
+  // const [cantidad, setCantidad] = useState(0);
+  // const [totalCarrito, setTotalCarrito] = useState(0);
 
-  const router = useRouter()
+  // const router = useRouter()
 
 
   // useEffect(()=>{
@@ -53,7 +53,7 @@ function Navbar() {
   // },[cart])
 
 
-  const [busqueda, setBusqueda] = useState('');
+  // const [busqueda, setBusqueda] = useState('');
 
 
   return (
