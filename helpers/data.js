@@ -46,7 +46,7 @@ import sushi_5 from '@/public/sushi/5.png'
 export const productos = [
     {
       "nombre": "Producto 1",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 1990,
       "descuento": 0,
       "miniatura": sushi_1,
@@ -55,7 +55,7 @@ export const productos = [
     },
     {
         "nombre": "Producto 2",
-        "categoria": "Llaveros",
+        "categoria": "Sushi",
         "precio": 2990,
         "descuento": 0,
         "miniatura": sushi_2,
@@ -64,7 +64,7 @@ export const productos = [
       },
     {
     "nombre": "Producto 3",
-    "categoria": "Llaveros",
+    "categoria": "Sushi",
     "precio": 3990,
     "descuento": 0,
     "miniatura": sushi_3,
@@ -73,7 +73,7 @@ export const productos = [
     },
     {
       "nombre": "Producto 4",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 4990,
       "descuento": 0,
       "miniatura": sushi_4,
@@ -87,7 +87,7 @@ export const productos_lista = [
   {
   "id": 1,
   "marca": "Suhsipletos",
-  "categoria": "Llaveros",
+  "categoria": "Sushi",
   "fotos": [
     {
       "id": 258,
@@ -121,7 +121,7 @@ export const productos_lista = [
   "relacionados": [
     {
       "nombre": "Producto 2",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 2990,
       "descuento": 0,
       "miniatura": sushi_2,
@@ -130,7 +130,7 @@ export const productos_lista = [
       },
     {
     "nombre": "Producto 3",
-    "categoria": "Llaveros",
+    "categoria": "Sushi",
     "precio": 3990,
     "descuento": 0,
     "miniatura": sushi_3,
@@ -139,7 +139,7 @@ export const productos_lista = [
     },
     {
       "nombre": "Producto 4",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 4990,
       "descuento": 0,
       "miniatura": sushi_4,
@@ -168,7 +168,7 @@ export const productos_lista = [
 {
   "id": 2,
   "marca": "Suhsipletos",
-  "categoria": "Llaveros",
+  "categoria": "Sushi",
   "fotos": [
     {
       "id": 258,
@@ -201,7 +201,7 @@ export const productos_lista = [
   "relacionados": [
     {
       "nombre": "Producto 1",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 1990,
       "descuento": 0,
       "miniatura": sushi_1,
@@ -210,7 +210,7 @@ export const productos_lista = [
     },
     {
     "nombre": "Producto 3",
-    "categoria": "Llaveros",
+    "categoria": "Sushi",
     "precio": 3990,
     "descuento": 0,
     "miniatura": sushi_3,
@@ -219,7 +219,7 @@ export const productos_lista = [
     },
     {
       "nombre": "Producto 4",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 4990,
       "descuento": 0,
       "miniatura": sushi_4,
@@ -248,7 +248,7 @@ export const productos_lista = [
 {
   "id": 3,
   "marca": "Suhsipletos",
-  "categoria": "Llaveros",
+  "categoria": "Sushi",
   "fotos": [
     {
       "id": 258,
@@ -281,7 +281,7 @@ export const productos_lista = [
   "relacionados": [
     {
       "nombre": "Producto 1",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 1990,
       "descuento": 0,
       "miniatura": sushi_1,
@@ -290,7 +290,7 @@ export const productos_lista = [
     },
     {
         "nombre": "Producto 2",
-        "categoria": "Llaveros",
+        "categoria": "Sushi",
         "precio": 2990,
         "descuento": 0,
         "miniatura": sushi_2,
@@ -299,7 +299,7 @@ export const productos_lista = [
       },
     {
       "nombre": "Producto 4",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 4990,
       "descuento": 0,
       "miniatura": sushi_4,
@@ -328,7 +328,7 @@ export const productos_lista = [
 {
   "id": 4,
   "marca": "Suhsipletos",
-  "categoria": "Llaveros",
+  "categoria": "Sushi",
   "fotos": [
     {
       "id": 258,
@@ -361,7 +361,7 @@ export const productos_lista = [
   "relacionados": [
     {
       "nombre": "Producto 1",
-      "categoria": "Llaveros",
+      "categoria": "Sushi",
       "precio": 1990,
       "descuento": 0,
       "miniatura": sushi_1,
@@ -370,7 +370,7 @@ export const productos_lista = [
     },
     {
         "nombre": "Producto 2",
-        "categoria": "Llaveros",
+        "categoria": "Sushi",
         "precio": 2990,
         "descuento": 0,
         "miniatura": sushi_2,
@@ -379,7 +379,7 @@ export const productos_lista = [
       },
     {
     "nombre": "Producto 3",
-    "categoria": "Llaveros",
+    "categoria": "Sushi",
     "precio": 3990,
     "descuento": 0,
     "miniatura": sushi_3,
