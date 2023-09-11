@@ -1,7 +1,7 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { CartProvider } from "@/contexts/cart/CartContext";
 import { OverlayTrigger, Spinner, SSRProvider, Tooltip } from "react-bootstrap";
-import Navbar from "@/components/NavBar/Navbar";
+// import Navbar from "@/components/NavBar/Navbar";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import NProgress from 'nprogress'
@@ -14,7 +14,6 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 import '../styles/temas.css';
 
-import { Analytics } from '@vercel/analytics/react';
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
