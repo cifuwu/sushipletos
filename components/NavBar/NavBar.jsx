@@ -78,7 +78,7 @@ function Navbar() {
 
           {/* ---- COL NAV IZQUIERDA */}
 
-          <Col className="align-self-center">
+          {/* <Col className="align-self-center">
             <Row>
               <Col xs={8}>
                 <form className="d-none d-md-block" onSubmit={e=>{e.preventDefault(); router.push('/busqueda/'+busqueda); setBusqueda('');}}>
@@ -94,7 +94,7 @@ function Navbar() {
                 <GoThreeBars className="boton d-md-none" style={{transform: 'scale(2)', margin: '3px'}} onClick={canvasShow}/>
               </Col>
             </Row>
-          </Col>
+          </Col> */}
 
           {/* ---- COL NAV CENTRO ----- */}
 
@@ -112,7 +112,7 @@ function Navbar() {
 
           {/* ---- COL NAV DERECHO ------ */}
 
-          <Col className="align-self-center ">
+          {/* <Col className="align-self-center ">
             <Row className="justify-content-end ">
 
                   <Col xs='auto' className="my-auto">
@@ -133,7 +133,7 @@ function Navbar() {
 
                   </Col>
             </Row>
-          </Col>
+          </Col> */}
         </Row>
 
 
