@@ -16,7 +16,7 @@ import logo from "../../public/logo_2.png";
 
 
 import { CartContext } from "../../contexts/cart/CartContext";
-// import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
+import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
 import { Button } from "react-bootstrap";
 
 import { MdShoppingCart } from "react-icons/md";
@@ -164,7 +164,7 @@ function Navbar() {
 
       {/* MENU OFFCANVAS PARA TELEFONOS */}
 
-      <Offcanvas
+      {/* <Offcanvas
         show={mostrarCanvas}
         onHide={canvasClose}
         style={{ maxWidth: "300px" }}
@@ -229,16 +229,16 @@ function Navbar() {
           </Row>
 
         </Offcanvas.Body>
-      </Offcanvas>
+      </Offcanvas> */}
 
 
       {/* ------ CARRITO OFFCANVAS ------ */}
-{/* 
+
       <CarritoOffCanvas
         abrir={carritoAbrir}
         cerrar={carritoCerrar}
         estado={mostrarCarrito}
-      /> */}
+      />
 
       
     </div>
