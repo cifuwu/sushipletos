@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Head>
         <title>Suhsipletos</title>
-        <meta name="description" content="Tiendita de productos hechos en impresora 3D" />
+        <meta name="description" content="Tiendita de sushi rico rico rico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
