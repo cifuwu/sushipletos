@@ -1,55 +1,53 @@
 import React, { useContext, useState, useEffect } from "react";
-import {Col, Row, Container} from "react-bootstrap";
-// import { useRouter } from "next/router";
-// import Link from "next/link";
-// import Offcanvas from "react-bootstrap/Offcanvas";
+import {Col, Row, Container, Button} from "react-bootstrap";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
-// import { categorias } from "@/helpers/data";
+import { categorias } from "@/helpers/data";
+
+import Image from "next/image";
+import logo from "../../public/logo_2.png";
 
 
-// import Image from "next/image";
-// import logo from "../../public/logo_2.png";
+import { CartContext } from "../../contexts/cart/CartContext";
+import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
 
+import { MdShoppingCart } from "react-icons/md";
+import { GoThreeBars } from "react-icons/go";
 
-// import { CartContext } from "../../contexts/cart/CartContext";
-// import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
-// import { Button } from "react-bootstrap";
-
-// import { MdShoppingCart } from "react-icons/md";
-// import { GoThreeBars } from "react-icons/go";
-
-// import Boton from "./components/Boton";
-// import DropdownNav from "./components/DropdownNav";
+import Boton from "./components/Boton";
+import DropdownNav from "./components/DropdownNav";
 
 
 
 
 function Navbar() {
-  // const [cart, setCart] = useContext(CartContext);
+  const [cart, setCart] = useContext(CartContext);
 
-  // const [mostrarCanvas, setCanvas] = useState(false);
-  // const [mostrarCarrito, setCarrito] = useState(false);
+  const [mostrarCanvas, setCanvas] = useState(false);
+  const [mostrarCarrito, setCarrito] = useState(false);
 
-  // const canvasClose = () => setCanvas(false);
-  // const canvasShow = () => setCanvas(true);
+  const canvasClose = () => setCanvas(false);
+  const canvasShow = () => setCanvas(true);
 
-  // const carritoCerrar = () => setCarrito(false);
-  // const carritoAbrir = () => setCarrito(true);
+  const carritoCerrar = () => setCarrito(false);
+  const carritoAbrir = () => setCarrito(true);
 
-  // const [cantidad, setCantidad] = useState(0);
-  // const [totalCarrito, setTotalCarrito] = useState(0);
+  const [cantidad, setCantidad] = useState(0);
+  const [totalCarrito, setTotalCarrito] = useState(0);
 
-  // const router = useRouter()
-
-
-  // useEffect(()=>{
-  //   if(cart.total != null){
-  //     setCantidad(cart.cont);
-  //     setTotalCarrito(cart.total);}
-  // },[cart])
+  const router = useRouter()
 
 
-  // const [busqueda, setBusqueda] = useState('');
+  useEffect(()=>{
+    if(cart.total != null){
+      setCantidad(cart.cont);
+      setTotalCarrito(cart.total);}
+  },[cart])
+
+
+  const [busqueda, setBusqueda] = useState('');
 
 
   return (
@@ -75,7 +73,7 @@ function Navbar() {
 
           {/* ---- COL NAV IZQUIERDA */}
 
-          {/* <Col className="align-self-center">
+          <Col className="align-self-center">
             <Row>
               <Col xs={8}>
                 <form className="d-none d-md-block" onSubmit={e=>{e.preventDefault(); router.push('/busqueda/'+busqueda); setBusqueda('');}}>
@@ -91,11 +89,11 @@ function Navbar() {
                 <GoThreeBars className="boton d-md-none" style={{transform: 'scale(2)', margin: '3px'}} onClick={canvasShow}/>
               </Col>
             </Row>
-          </Col> */}
+          </Col>
 
           {/* ---- COL NAV CENTRO ----- */}
 
-          {/* <Col  className="text-center">
+          <Col  className="text-center">
             <Image
               className="img-fluid"
               src={logo}
@@ -105,11 +103,11 @@ function Navbar() {
               onClick={(e) => {e.preventDefault(); router.push('/');}}
               style={{cursor: "pointer", minHeight:'50', minWidth:'50'}}
             />
-          </Col> */}
+          </Col>
 
           {/* ---- COL NAV DERECHO ------ */}
 
-          {/* <Col className="align-self-center ">
+          <Col className="align-self-center ">
             <Row className="justify-content-end ">
 
                   <Col xs='auto' className="my-auto">
@@ -130,12 +128,12 @@ function Navbar() {
 
                   </Col>
             </Row>
-          </Col> */}
+          </Col>
         </Row>
 
 
         {/* ------------ FILA SECTOR BOTONES NAVBAR -------------- */}
-{/* 
+
         <div className="d-none d-md-block ">
           <Row
             className="justify-content-center align-items-center"
@@ -152,7 +150,7 @@ function Navbar() {
             <Boton link='/informacion' texto='Información'/>
 
           </Row>
-        </div> */}
+        </div>
       </Container>
 
       <hr style={{ marginTop: "5px" }} />
@@ -161,7 +159,7 @@ function Navbar() {
 
       {/* MENU OFFCANVAS PARA TELEFONOS */}
 
-      {/* <Offcanvas
+      <Offcanvas
         show={mostrarCanvas}
         onHide={canvasClose}
         style={{ maxWidth: "300px" }}
@@ -226,16 +224,16 @@ function Navbar() {
           </Row>
 
         </Offcanvas.Body>
-      </Offcanvas> */}
+      </Offcanvas>
 
 
       {/* ------ CARRITO OFFCANVAS ------ */}
 
-      {/* <CarritoOffCanvas
+      <CarritoOffCanvas
         abrir={carritoAbrir}
         cerrar={carritoCerrar}
         estado={mostrarCarrito}
-      /> */}
+      />
 
       
     </div>
