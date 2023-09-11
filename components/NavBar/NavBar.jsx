@@ -99,7 +99,7 @@ function Navbar() {
           {/* ---- COL NAV CENTRO ----- */}
 
           <Col  className="text-center">
-            {/* <Image
+            <Image
               className="img-fluid"
               src={logo}
               alt='cifumakers'
@@ -107,7 +107,7 @@ function Navbar() {
               height={75}
               onClick={(e) => {e.preventDefault(); router.push('/');}}
               style={{cursor: "pointer", minHeight:'50', minWidth:'50'}}
-            /> */}
+            />
           </Col>
 
           {/* ---- COL NAV DERECHO ------ */}
