@@ -16,7 +16,7 @@ import logo from "../../public/logo_2.png";
 
 
 import { CartContext } from "../../contexts/cart/CartContext";
-import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
+// import CarritoOffCanvas from "../carritoOffCanvas/CarritoOffCanvas";
 import { Button } from "react-bootstrap";
 
 import { MdShoppingCart } from "react-icons/md";
