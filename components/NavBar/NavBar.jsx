@@ -1,11 +1,7 @@
-import React, { useContext } from "react";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-// import { useState } from "react";
-// import { useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import {Col, Row, Container} from "react-bootstrap";
 // import { useRouter } from "next/router";
 // import Link from "next/link";
-import Container from "react-bootstrap/Container";
 // import Offcanvas from "react-bootstrap/Offcanvas";
 
 // import { categorias } from "@/helpers/data";
