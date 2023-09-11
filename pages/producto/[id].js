@@ -230,7 +230,7 @@ function Producto() {
 
                     </div>
                   </Col>
-                  <hr></hr>
+                  <hr className="mt-3"></hr>
                 </Row>
                 
 
