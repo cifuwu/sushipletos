@@ -46,11 +46,11 @@ function Navbar() {
   const router = useRouter()
 
 
-  useEffect(()=>{
-    if(cart.total != null){
-      setCantidad(cart.cont);
-      setTotalCarrito(cart.total);}
-  },[cart])
+  // useEffect(()=>{
+  //   if(cart.total != null){
+  //     setCantidad(cart.cont);
+  //     setTotalCarrito(cart.total);}
+  // },[cart])
 
 
   const [busqueda, setBusqueda] = useState('');
