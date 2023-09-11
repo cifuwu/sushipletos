@@ -1,0 +1,317 @@
+#nprogress .bar {
+    height: 8px;
+  }
+
+  #nprogress .spinner-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+
+
+/*               PRODUCTO                */
+
+
+.producto{
+    border-right: 2px solid var(--bs-btn-disabled-color);
+    border-left-style: solid;
+    border-left-color: var(--bs-btn-disabled-color);
+}
+
+.foto-producto{
+    cursor: pointer;
+    transition: transform .15s ease-in-out;
+}
+.foto-producto:hover{
+    
+    transform: scale(1.1);
+    border: 1px solid rgba(0, 0, 0,0.5);
+    /* box-shadow: 6px 6px 6px 6px rgba(0, 0, 0,0.2); */
+    
+}
+
+.popo{
+    height: 550px;
+    width: 550px;
+}
+
+.seleccionado{
+    opacity: 0.55;
+}
+
+.tarjeta-carrito{
+    cursor: pointer;
+    background-color: rgb(49, 108, 244);
+    color: white;
+    border-color: transparent;
+    transition: .20s ease-in-out;
+}
+.tarjeta-carrito:hover{
+    background-color: rgb(41, 93, 207);
+}
+.color-verde{
+    color: rgb(213, 230, 222);
+}
+
+.contador{
+    border: 1px solid rgb(49, 108, 244);
+    border-radius: 5px;
+}
+.esquina-derecha{
+    cursor: pointer;
+    background-color: rgb(49, 108, 244);
+    /* border-left: 1px solid black; */
+    color: white;
+    transition: .20s ease-in-out;
+}
+.esquina-derecha:hover{
+    background-color: rgb(41, 93, 207);
+}
+
+.esquina-izquierda{
+    cursor: pointer;
+    background-color: rgb(49, 108, 244);
+    color: white;
+    /* border-right: 1px solid black; */
+    transition: .20s ease-in-out;
+}
+.esquina-izquierda:hover{
+    background-color: rgb(41, 93, 207);
+}
+
+
+
+/*               NAVBAR                */
+
+
+.caca{
+    transition: all .15s;
+  }
+  
+  .caca:hover{
+    transition: all .15s;
+    transform: scale(1.10);
+  }
+
+
+
+
+/*               PRODUCTOS CARRITO OFFCANVAS                */
+
+.link-producto{
+    cursor: pointer;
+    transition: .10s ease-in-out;
+}
+.link-producto:hover{
+    opacity: 0.7;
+}
+
+.link-producto-texto{
+    cursor: pointer;
+}
+.link-producto-texto:hover{
+    text-decoration-line: underline;
+}
+
+
+
+
+
+
+
+.ekis{
+    cursor: pointer;
+}
+
+.ekis:hover{
+    transform: scale(1.3);
+    transition: all .15s ease-in-out;
+}
+
+
+
+.agencia{
+    cursor: pointer;
+    transition: transform .15s ease-in-out;
+}
+
+.agencia:hover{
+    transform: scale(1.03);
+}
+
+.seleccionado{
+    border-color: blue;
+    transform: scale(1.03);
+}
+
+.medio-pago{
+    cursor: pointer;
+}
+.medio-pago:hover{
+    transform: scale(1.03);
+}
+.medio-pago-seleccionado{
+    cursor: pointer;
+    border-color: blue;
+    transform: scale(1.03);
+}
+
+
+/*        BOTON FLOTANTE         */
+
+.instagram-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    transition: .1s ease-in-out;
+  }
+  
+  .instagram-button img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+@media only screen and (max-width: 767px) {
+    .instagram-button {
+      bottom: 7px;
+      left: 7px;
+    }
+  
+    .instagram-button img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+
+.instagram-button:hover{
+    transform: scale(1.1);
+}
+
+
+
+.badge-producto{
+    cursor: pointer;
+}
+  
+.imagen-noarrastrable{
+    -webkit-user-drag: none;  /* para navegadores basados en webkit, como Chrome y Safari */
+    -moz-user-drag: none;     /* para navegadores basados en Mozilla, como Firefox */
+    -ms-user-drag: none;      /* para navegadores basados en Microsoft, como Edge e IE */
+}
+
+
+
+.card-eleccion{
+    padding: 3px;
+    border: 1px solid var(--bs-gray-400);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card-eleccion p{
+    transform: scale(0.9);
+}
+
+/* .card-eleccion:hover{
+    border: solid var(--bs-primary);
+} */
+
+.card-eleccion.eleccion{
+    border: 2px solid var(--bs-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PEDIDOOOOOOOOOOOOOOOOO PAGEEEEEEEEEEEEEE */
+.stepper-wrapper {
+    font-family: Arial;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: var(--bs-success);
+    color: white;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid var(--bs-success);
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }

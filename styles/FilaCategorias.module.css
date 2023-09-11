@@ -1,0 +1,9 @@
+.xd{
+    cursor: pointer;
+    transition: opacity .35s;
+    
+}
+
+.xd:hover{
+    opacity: 0.5;
+}

@@ -1,0 +1,14 @@
+.carta{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .15s ease-in-out;
+}
+.carta:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    transform: scale(1.025);
+}
+
+.animate__animated.animate__fadeIn{
+    --animate-duration: 0.3s;
+}
+
