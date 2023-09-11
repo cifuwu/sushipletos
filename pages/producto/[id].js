@@ -61,6 +61,16 @@ function Producto() {
 
   }, [producto]);
 
+  useEffect(()=>{
+    let id = router.query.id - 1
+    if(!id){
+      id = 0
+    }
+    setProducto(productos_lista[id])
+    setImagenes(productos_lista[id].fotos)
+
+  },[router])
+
   const agregarCarrito = async () => {
     setShow(false);
     setCargando(true);

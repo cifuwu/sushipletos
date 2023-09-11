@@ -29,6 +29,7 @@
     "react-canvas-confetti": "^1.4.0",
     "react-dom": "18.2.0",
     "react-gtm-module": "^2.0.11",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "sass": "^1.66.1"
   }
 }

@@ -36,40 +36,47 @@ export const categorias = [{
     "categoria": "Rolls"
   }]
 
+
+import sushi_1 from '@/public/sushi/1.png'
+import sushi_2 from '@/public/sushi/2.png'
+import sushi_3 from '@/public/sushi/3.png'
+import sushi_4 from '@/public/sushi/4.png'
+import sushi_5 from '@/public/sushi/5.png'
+
 export const productos = [
     {
       "nombre": "Producto 1",
       "categoria": "Llaveros",
-      "precio": 2690,
+      "precio": 1990,
       "descuento": 0,
-      "miniatura": "https://cifu.blob.core.windows.net/cifumakers/miniaturas/Copia_de_llaveros_Flork_2.png",
+      "miniatura": sushi_1,
       "id": 1,
       "miniatura_2": null
     },
     {
         "nombre": "Producto 2",
         "categoria": "Llaveros",
-        "precio": 2690,
+        "precio": 2990,
         "descuento": 0,
-        "miniatura": "https://cifu.blob.core.windows.net/cifumakers/miniaturas/Copia_de_llaveros_Flork_2.png",
+        "miniatura": sushi_2,
         "id": 2,
         "miniatura_2": null
       },
     {
     "nombre": "Producto 3",
     "categoria": "Llaveros",
-    "precio": 2690,
+    "precio": 3990,
     "descuento": 0,
-    "miniatura": "https://cifu.blob.core.windows.net/cifumakers/miniaturas/Copia_de_llaveros_Flork_2.png",
+    "miniatura": sushi_3,
     "id": 3,
     "miniatura_2": null
     },
     {
       "nombre": "Producto 4",
       "categoria": "Llaveros",
-      "precio": 2690,
+      "precio": 4990,
       "descuento": 0,
-      "miniatura": "https://cifu.blob.core.windows.net/cifumakers/miniaturas/Copia_de_llaveros_Flork_2.png",
+      "miniatura": sushi_4,
       "id": 4,
       "miniatura_2": null
       },
@@ -85,21 +92,21 @@ export const productos_lista = [
     {
       "id": 258,
       "titulo": "gatito banana cat llorando",
-      "foto": "https://cifu.blob.core.windows.net/cifumakers/productos/Llavero_banana_cat_llorando.png",
+      "foto": sushi_1,
       "posicion": 1,
       "producto": 28
     },
     {
       "id": 259,
       "titulo": "gatito banana cat llorando",
-      "foto": "https://cifu.blob.core.windows.net/cifumakers/productos/3_NT26hJN.png",
+      "foto": sushi_2,
       "posicion": 2,
       "producto": 28
     },
     {
       "id": 260,
       "titulo": "gatito banana cat llorando",
-      "foto": "https://cifu.blob.core.windows.net/cifumakers/productos/4_GdjELaz.png",
+      "foto": sushi_3,
       "posicion": 3,
       "producto": 28
     }
@@ -112,44 +119,44 @@ export const productos_lista = [
   ],
   "relacionados": [
     {
-      "nombre": "Llavero perrito panzón",
+      "nombre": "Producto 2",
       "categoria": "Llaveros",
-      "precio": 2690,
+      "precio": 2990,
       "descuento": 0,
-      "miniatura": "https://cifu.blob.core.windows.net/cifumakers/miniaturas/Copia_de_llaveros_Flork_2.png",
-      "id": 30,
+      "miniatura": sushi_2,
+      "id": 2,
       "miniatura_2": null
+      },
+    {
+    "nombre": "Producto 3",
+    "categoria": "Llaveros",
+    "precio": 3990,
+    "descuento": 0,
+    "miniatura": sushi_3,
+    "id": 3,
+    "miniatura_2": null
     },
     {
-      "nombre": "Llavero meme banana cat",
+      "nombre": "Producto 4",
       "categoria": "Llaveros",
-      "precio": 2690,
+      "precio": 4990,
       "descuento": 0,
-      "miniatura": "https://cifu.blob.core.windows.net/cifumakers/miniaturas/2_7Qgb6zl.png",
-      "id": 27,
+      "miniatura": sushi_4,
+      "id": 4,
       "miniatura_2": null
-    },
-    {
-      "nombre": "Llaveros meme flork",
-      "categoria": "Llaveros",
-      "precio": 2490,
-      "descuento": 0,
-      "miniatura": "https://cifu.blob.core.windows.net/cifumakers/miniaturas/2.png",
-      "id": 1,
-      "miniatura_2": null
-    }
+      },
   ],
   "nombre": "Producto 1",
   "sku": "SKU28",
   "descripcion": "<p><span style=\"font-size: 12pt;\"><strong>&iexcl;Llavero del meme Banana Cat llorando 👀</strong></span></p>\r\n<p><span style=\"font-size: 12pt;\">Hermoso llaverito hechos a mano para ti!</span></p>\r\n<p>👉🏼 Sus medidas aproximadas son de 5.3[cm] x 3.8[cm] x 0.35[cm].</p>\r\n<p>👉🏼 Hechos de PLA, pl&aacute;stico hecho a base de trigo 🌱.</p>\r\n<p>👉🏼 Efectivamente, es un gatito banana llorando ☕️.&nbsp;</p>",
-  "descripcion_corta": "llavero del meme banana cat llorando, gato platano, gatito platano, gatito llorando, gato banana, gato llorando",
-  "precio": 2990,
+  "descripcion_corta": "sushi",
+  "precio": 1990,
   "descuento": 0,
   "stock": 0,
   "control_stock": false,
   "disponible": true,
   "tiempo_fabricacion": 3,
-  "miniatura": "https://cifu.blob.core.windows.net/cifumakers/miniaturas/Llavero_banana_cat_llorando.png",
+  "miniatura": sushi_1,
   "miniatura_2": null,
   "posicion": 1,
   "contiene_variaciones": false,
