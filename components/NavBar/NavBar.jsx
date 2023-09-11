@@ -138,7 +138,7 @@ function Navbar() {
 
 
         {/* ------------ FILA SECTOR BOTONES NAVBAR -------------- */}
-
+{/* 
         <div className="d-none d-md-block ">
           <Row
             className="justify-content-center align-items-center"
@@ -155,7 +155,7 @@ function Navbar() {
             <Boton link='/informacion' texto='Información'/>
 
           </Row>
-        </div>
+        </div> */}
       </Container>
 
       <hr style={{ marginTop: "5px" }} />
