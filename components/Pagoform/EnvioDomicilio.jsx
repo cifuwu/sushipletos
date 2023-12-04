@@ -25,11 +25,11 @@ export const getRegiones = async () => {
   return await fetch(getRegionesUrl)
     .then((result) => result.json())
     .then((data) => {
-      const regiones = data?.map((region) => ({
-        label: region.label,
+      const regiones = data?.regiones?.map((region) => ({
+        label: region.region,
         id: region.id,
       }));
-      //console.log(regiones)
+      // console.log(regiones)
       return regiones;
     });
 };
@@ -38,8 +38,8 @@ export const getComunasLabel = async (id) => {
   return await fetch(getComunasLabelUrl + id)
     .then((result) => result.json())
     .then((data) => {
-      const regiones = data?.map((region) => ({
-        label: region.label,
+      const regiones = data?.comunas?.map((region) => ({
+        label: region.comuna,
         id: region.id,
       }));
       //console.log(regiones)
@@ -48,12 +48,7 @@ export const getComunasLabel = async (id) => {
 };
 
 export const getCostosByComuna = async (id) => {
-  return await fetch(getCostosByComunaUrl + id)
-    .then((result) => result.json())
-    .then((data) => {
-      //console.log(regiones)
-      return data;
-    });
+  return [{id: 1, precio: 1000, courier: {id: 2, nombre: "normal"}}]
 };
 
 function EnvioDomicilio() {

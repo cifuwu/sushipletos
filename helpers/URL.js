@@ -1,12 +1,12 @@
-const URL = 'https://cifu.azurewebsites.net';
+const URL = 'https://cifumakers-test.azurewebsites.net';
 
 
 
 
 
-export const getRegionesUrl = URL + '/pedido/regiones/all';
+export const getRegionesUrl = URL + '/envio/?region=all';
 
-export const getComunasLabelUrl = URL + '/pedido/comunas/';
+export const getComunasLabelUrl = URL + '/envio/?region=';
 
 export const getCostosByComunaUrl = URL + '/pedido/costosEnvios/comuna/';
 

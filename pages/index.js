@@ -7,11 +7,11 @@ import FilaCategorias from '@/components/home/FilaCategorias';
 import FilaProductosHome from '@/components/home/FilaProductosHome';
 
 
-import { carrousel, productos } from '@/helpers/data';
+import { carrousel } from '@/helpers/data';
 
 
 
-export default function Home() {
+export default function Home({productos}) {
 
 
   return (
@@ -37,41 +37,36 @@ export default function Home() {
 
         <FilaProductosHome productos={productos}/>
 
-     
-        {/* <Row style={{marginBottom: '25px', marginTop: '50px', padding: '15px'}} className='align-items-center justify-content-evenly bg-body-tertiary'>
-          <Col xs={4} sm={4} md={3} lg={3} xl={3} xxl={2}>
-            <Row>
-              <img className="img-fluid" src={calendario}/>
-            </Row>
-            <Row className="text-center" style={{marginTop: '10px'}}>
-              <h6 className="fw-normal d-md-none">Pedidos listos en uno a tres días hábiles.</h6>
-              <h5 className="fw-normal d-none d-md-block">Pedidos listos en uno a tres días hábiles.</h5>
-            </Row>
-          </Col>
-          <Col xs={4} sm={4} md={3} lg={3} xl={3} xxl={2}>
-            <Row>
-              <img className="img-fluid" src={envios}/>
-            </Row>
-            <Row className="text-center" style={{marginTop: '10px'}}>
-              <h6 className="fw-normal d-md-none">Envios a todo Chile por Starken.</h6>
-              <h5 className="fw-normal d-none d-md-block">Envios a todo Chile por Starken.</h5>
-            </Row>
-          </Col>
-          <Col xs={4} sm={4} md={3} lg={3} xl={3} xxl={2}>
-            <Row>
-              <img className="img-fluid" src={chat}/>
-            </Row>
-            <Row className="text-center" style={{marginTop: '10px'}}>
-              <h6 className="fw-normal d-md-none">Háblanos a nuestras redes.</h6>
-              <h5 className="fw-normal d-none d-md-block">Háblanos a nuestras redes.</h5>
-            </Row>
-          </Col>
-        </Row> */}
-
-
       </Container>
     </div>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const resp = await fetch("http://localhost:8090/graphql",
+    {
+    headers: {'Content-Type' : 'application/json'},
+    method: 'post',
+    body: JSON.stringify(
+      {query: `query AllProductos {
+        allProductos {
+          descripccion
+          id
+          fotos {
+            id
+            url
+          }
+          nombre
+          precio
+          categoria
+        }
+      }` })})
+  .then(result => result.json())
+  .catch(err => console.log(err))
+
+  console.log(resp.data)
+  const productos = resp.data.allProductos
+  return { props: { productos } }
 }
 

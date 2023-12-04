@@ -31,15 +31,7 @@ function CheckoutPage2() {
                         </Col>
                     </Row>
                     <Row style={{marginTop: '10px'}}>
-                        {/* <Col xs={12} style={{marginBottom: '5px'}}>
-                            <label className="col-form-label fs-5 fw-normal">Elige una opción</label>
-                        </Col>
-                        <Col xs={6} sm='auto'>
-                            <ToggleButton id={1} variant={forma==1? 'primary' : 'outline-primary'} type='button' onClick={ () => setForma(1) }>Envio a domicilio</ToggleButton>
-                        </Col>
-                        <Col xs={6} sm='auto' >
-                            <ToggleButton id={2} variant={forma==2? 'primary' : 'outline-primary'}  type="button" onClick={ () => setForma(2) }>Retiro en agencia</ToggleButton>
-                        </Col> */}
+
                     </Row>
                     {/* {forma==1? 
                     <> */}

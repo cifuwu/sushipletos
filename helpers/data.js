@@ -1,9 +1,9 @@
 export const headerTienda = {
   "id": 4,
   "tienda": 1,
-  "chico": "https://cifu.blob.core.windows.net/cifumakers/categoria/tiendita_chico.png",
-  "mediano": "https://cifu.blob.core.windows.net/cifumakers/categoria/tiendita_mediano.png",
-  "grande": "https://cifu.blob.core.windows.net/cifumakers/categoria/tiendita_grande.png",
+  "chico": "https://cdnx.cifumakers.cl/cifumakers/banner/1banner_pequeno_NNaEG4X.webp",
+  "mediano": "https://cdnx.cifumakers.cl/cifumakers/banner/1banner_pequeno_NNaEG4X.webp",
+  "grande": "https://cdnx.cifumakers.cl/cifumakers/banner/1banner_pequeno_NNaEG4X.webp",
   "blur": "data:image/webp;base64,UklGRvIDAABXRUJQVlA4WAoAAAAgAAAAZQIAowAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggBAIAAPAhAJ0BKmYCpAA+7Xa3VqmnJSOgKAEwHYlpbuB7L4C3/qfEBcIAE9gHvtk5D32ych77ZOQ99snLoIuKfLzqlT958lwERP0R1k22LPVjltO0fojrJtr8y76nCkprL+SC3tDhP3nmpWAqeIZpWTukvCPvbuuLSAfLgyVWoQ5on6IlFP0N3qe4Qhm3ayWsdvtZJuDY2Qz5CUrQyKB23Nr51sU2S8AzjGonTDZOZdNA1NqKpxrKho74ISzo34eeHafFjJzR9uQKsszlm1t8mkqup9F58lwQHmC4pon6I9d89ReUSndi/+KSNTD7+ys2AIUD7b3yYq2ZMLojrpB9ZRLfJ1KsvuqqYPkMvyZoJ7m3kLXcNYIT1A2/a6AA/u+s3/VXYHh3W4W32wo5q5Q1cHc7Ijyi3aLb5pGTlTUxh0IAScDyOk+suLkdBrfvRiUgUOCiKjQo/I6aZeiMKp5yXw1myDnmWYuFTQ90woLA3rbKtMi7AAxXCoQ5NJcnITsdpiSRz+bU0rPRL34iqJdW+2zt8GznsmSkc7f1C30LBAHWPTmN/z60c7OuO+AgTMQDIPzf3bUaJZILXxyWQTy1spMgXL40CldMv7BP5CMJlWkZ5eTEs2zQtzwW9E3fIOVP4pE5BTOXv1s/OL5Ikk0FgWhh8lzCexBKl9AA7zWg2fEHhELBAAAAAA==",
   "categoria": null
 }

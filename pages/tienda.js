@@ -6,9 +6,9 @@ import Head from "next/head";
 import useResolucion from "../hooks/useResolucion";
 import Filaproductos from "@/components/Filaproductos";
 import Image from "next/image";
-import { productos, headerTienda } from "@/helpers/data";
+import { headerTienda } from "@/helpers/data";
 
-function TiendaPage() {
+function TiendaPage({productos}) {
     const { width, height } = useResolucion();
     const [ancho, setAncho] = useState(450);
     const [largo, setLargo] = useState(120);
@@ -49,46 +49,75 @@ function TiendaPage() {
     }, [headerTienda]);
 
     return (
-        <>
-            <Head>
-                <title>Tienda</title>
-                <meta name="description" content="Todos los Productos de CifuMakers" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
+      <>
+        <Head>
+          <title>Tienda</title>
+          <meta name="description" content="Todos los Productos de CifuMakers" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+          />
+        </Head>
+
+        <Container>
+          <Row
+            className="justify-content-center"
+            style={{ marginTop: "35px", marginBotton: "25px" }}
+          >
+            <Col xs={12} className="text-center">
+              {imagen ? (
+                <Image
+                  src={imagen}
+                  alt="sushi"
+                  width={ancho}
+                  height={largo}
+                  priority
+                  quality={100}
+                  className="rounded img-fluid imagen-noarrastrable"
+                  placeholder="blur"
+                  blurDataURL={headerTienda.blur}
                 />
-            </Head>
+              ) : null}
+            </Col>
+          </Row>
 
-            <Container>
-              <Row
-                className="justify-content-center"
-                style={{ marginTop: "35px", marginBotton: "25px" }}
-              >
-                <Col xs={12} className="text-center">
-                  {imagen ? (
-                    <Image
-                      src={imagen}
-                      alt="sushi"
-                      width={ancho}
-                      height={largo}
-                      priority
-                      quality={ancho==3600? 10 : 75}
-                      className="rounded img-fluid imagen-noarrastrable"
-                      placeholder="blur"
-                      blurDataURL={headerTienda.blur}
-                    />
-                  ) : null}
-                </Col>
-              </Row>
+            <Filaproductos productos={productos} />
 
-                <Filaproductos productos={productos} />
-
-                <div style={{ marginTop: "100px" }}></div>
-                <div style={{ marginTop: "100px" }}></div>
-            </Container>
-        </>
+            <div style={{ marginTop: "100px" }}></div>
+            <div style={{ marginTop: "100px" }}></div>
+        </Container>
+      </>
     );
 }
 
 export default TiendaPage;
 
+
+export async function getServerSideProps() {
+    const resp = await fetch("http://localhost:8090/graphql",
+      {
+      headers: {'Content-Type' : 'application/json'},
+      method: 'post',
+      body: JSON.stringify(
+        {query: `query AllProductos {
+          allProductos {
+            descripccion
+            id
+            fotos {
+              id
+              url
+            }
+            nombre
+            precio
+            categoria
+          }
+        }` })})
+    .then(result => result.json())
+    .catch(err => console.log(err))
+  
+    console.log(resp.data)
+    const productos = resp.data.allProductos
+    return { props: { productos } }
+  }
+  
+  

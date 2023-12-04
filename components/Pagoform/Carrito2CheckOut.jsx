@@ -64,7 +64,30 @@ function Carrito2CheckOut({carrito}) {
     }
 
     const postPedidoAux = async () => {
-      // console.log(datosPedido)
+      const total = carrito.total + costo;
+
+      const resp = await fetch("http://localhost:8090/graphql",
+        {
+        headers: {'Content-Type' : 'application/json'},
+        method: 'post',
+        body: JSON.stringify(
+          {query: `query GetUrlPago($valor: Int!) {
+            getUrlPago(valor: $valor) {
+              message
+            }
+          }`,
+          variables: `{
+            "valor": ${total}
+          }` 
+          })})
+      .then(result => result.json())
+      .catch(err => console.log(err))
+
+      // console.log(resp)
+      
+      window.location.href = resp.data.getUrlPago.message;
+
+      // setCargandoBoton(false);
 
     };
 

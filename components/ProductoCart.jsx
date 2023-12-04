@@ -64,11 +64,11 @@ export default function ProductoCart({producto, setCargando, cargando}) {
 
         <Row>
         {producto.elecciones?.map( (elemento) => {
-            return(
-                <Col xs={12} key={elemento.id}>
-                  <p className='fs-6 fw-normal text-muted'> {elemento.tipo_variacion}: {elemento.valor_variacion}</p>
-                </Col>
-            )
+          return(
+            <Col xs={12} key={elemento.id}>
+              <p className='fs-6 fw-normal text-muted'> {elemento.tipo_variacion}: {elemento.valor_variacion}</p>
+            </Col>
+          )
         })}
         {producto.comentario? 
           <Col xs={12}>

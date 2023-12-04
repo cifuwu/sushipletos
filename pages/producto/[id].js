@@ -27,15 +27,14 @@ import { productos_lista } from "@/helpers/data";
 import { agregarItem, cantidadProductos, getTotal } from "@/functions/CarritoFunciones";
 
 
-function Producto() {
+function Producto({producto}) {
   const router = useRouter();
 
   let id = router.query.id - 1
   if(!id){
     id = 0
   }
-  const [producto, setProducto] = useState(productos_lista[id])
-  const [imagenes, setImagenes] = useState(productos_lista[id].fotos)
+  const [imagenes, setImagenes] = useState(producto.fotos)
   
   const [imagen, setImagen] = useState(0);
   const [cart, setCart] = useContext(CartContext);
@@ -61,31 +60,31 @@ function Producto() {
 
   }, [producto]);
 
-  useEffect(()=>{
-    let id = router.query.id - 1
-    if(!id){
-      id = 0
-    }
-    setProducto(productos_lista[id])
-    setImagenes(productos_lista[id].fotos)
+  // useEffect(()=>{
+  //   let id = router.query.id - 1
+  //   if(!id){
+  //     id = 0
+  //   }
+  //   setProducto(productos_lista[id])
+  //   setImagenes(productos_lista[id].fotos)
 
-  },[router])
+  // },[router])
 
   const agregarCarrito = async () => {
     setShow(false);
     setCargando(true);
     const resp = agregarItem(cart.elecciones, 
-                                {
-                                "nombre": producto.nombre,
-                                "categoria": producto.categoria,
-                                "precio": producto.precio,
-                                "descuento": 0,
-                                "miniatura": producto.miniatura,
-                                "id": producto.id,
-                                "miniatura_2": null
-                                },
-                                cont
-                                )
+      {
+      "nombre": producto.nombre,
+      "categoria": producto.categoria,
+      "precio": producto.precio,
+      "descuento": 0,
+      "miniatura": producto.fotos ? producto.fotos[0] : null,
+      "id": producto.id,
+      "miniatura_2": null
+      },
+      cont
+      )
     const total = getTotal(resp);
     const contador = cantidadProductos(resp);
     const aux = {total: total, cont: contador, elecciones: resp}
@@ -177,7 +176,7 @@ function Producto() {
 
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: producto.descripcion,
+                        __html: producto.descripccion,
                       }}
                       style={{ marginBottom: "30px" }}
                     ></div>
@@ -261,3 +260,40 @@ function Producto() {
 }
 
 export default Producto;
+
+
+
+
+export async function getServerSideProps({ params }) {
+  const id = params.id
+  console.log(id)
+  const resp = await fetch("http://localhost:8090/graphql",
+    {
+    headers: {'Content-Type' : 'application/json'},
+    method: 'post',
+    body: JSON.stringify(
+      {query: `query AllProductos($findProductoByIdId: ID!) {
+        findProductoById(id: $findProductoByIdId) {
+          categoria
+          descripccion
+          fotos {
+            id
+            url
+          }
+          id
+          nombre
+          precio
+        }
+      }`,
+      variables: `{
+        "findProductoByIdId": "${id}"
+      }` 
+      })})
+  .then(result => result.json())
+  .catch(err => console.log(err))
+
+  console.log(resp.data)
+  const producto = resp.data.findProductoById
+  return { props: { producto } }
+}
+

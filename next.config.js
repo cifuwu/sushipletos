@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images:{
     loader: 'default',
-    domains: ['cifu.blob.core.windows.net']
+    domains: ['cifu.blob.core.windows.net','cdnx.cifumakers.cl']
   }
 }
 
