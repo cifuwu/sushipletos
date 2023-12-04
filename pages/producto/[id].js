@@ -79,7 +79,7 @@ function Producto({producto}) {
       "categoria": producto.categoria,
       "precio": producto.precio,
       "descuento": 0,
-      "miniatura": producto.fotos ? producto.fotos[0] : null,
+      "miniatura": producto.fotos[0] ? producto.fotos[0].url : null,
       "id": producto.id,
       "miniatura_2": null
       },

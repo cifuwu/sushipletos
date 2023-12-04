@@ -32,7 +32,7 @@ function CarruselProducto({imagen, setImagen, imagenes, nombreProducto}) {
           <Carousel.Item key={imagen_.id + "carrusel"}>
             <Image
               className="img-fluid rounded imagen-noarrastrable"
-              src={imagen_.foto}
+              src={imagen_.url}
               height={500}
               width={500}
               quality={60}

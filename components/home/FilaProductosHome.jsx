@@ -15,7 +15,7 @@ function FilaProductosHome({productos}) {
       
       {productos?.map((producto) => {
         return(
-          <Productcard id={producto.id} key={producto.id} categoria={producto.categoria} titulo={producto.nombre} miniatura_1={producto.fotos ? producto.fotos[0] : null} precio={producto.precio} marca={producto.marca} descuento={producto.descuento}/>
+          <Productcard id={producto.id} key={producto.id} categoria={producto.categoria} titulo={producto.nombre} miniatura_1={producto.fotos[0] ? producto.fotos[0].url : null} precio={producto.precio} marca={producto.marca} descuento={producto.descuento}/>
         )
       })
 

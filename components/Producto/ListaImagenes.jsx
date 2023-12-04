@@ -25,7 +25,7 @@ function ListaImagenes({imagenes, setImagen, imagen, nombreProducto}) {
             onClick={() => {
               setImagen(imagen_.index);
             }}
-            src={imagen_.foto}
+            src={imagen_.url}
             height="150"
             width="150"
             quality={30}

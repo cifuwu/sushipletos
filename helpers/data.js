@@ -13,6 +13,7 @@ import sushi_l from '@/public/portada/sushi_l.png'
 import sushi_m from '@/public/portada/sushi_m.png'
 import sushi_s from '@/public/portada/sushi_s.png'
 
+
 export const carrousel = [
   {
     "id": 1,
